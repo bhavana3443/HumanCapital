@@ -165,8 +165,8 @@ def main():
         }
         .stApp {
             background: linear-gradient(135deg, 
-                rgba(28, 58, 148, 0.95) 0%, 
-                rgba(73, 125, 189, 0.95) 100%);
+                rgba(0, 51, 102, 0.95) 0%,     /* Dark blue */
+                rgba(0, 71, 171, 0.95) 100%);  /* Medium dark blue */
             background-attachment: fixed;
         }
         .button-container {
