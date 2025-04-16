@@ -411,6 +411,25 @@ def main():
             font-size: 18px;
             font-weight: bold;
         }
+        .github-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-decoration: none;
+            color: white !important;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .github-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
         </style>
     """, unsafe_allow_html=True)
     
@@ -419,7 +438,21 @@ def main():
         <div class="title-container">
             <div style="display: flex; align-items: center; justify-content: space-between;">
                 <h1 style="color: black; margin: 0; font-size: 32px;">ISSJ HR Hiring Dashboard</h1>
-                <img src="data:image/png;base64,{}" style="width: 150px;">
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <a href="https://github.com/MotoyaTakashi/HumanCapital/issues" 
+                       target="_blank" 
+                       style="text-decoration: none; 
+                              color: #0366d6; 
+                              font-weight: bold;
+                              padding: 8px 16px;
+                              border-radius: 6px;
+                              background-color: #f6f8fa;
+                              border: 1px solid #e1e4e8;
+                              transition: all 0.3s ease;">
+                        GitHub Repository
+                    </a>
+                    <img src="data:image/png;base64,{}" style="width: 150px;">
+                </div>
             </div>
         </div>
     """.format(get_base64_encoded_image("l.png")), unsafe_allow_html=True)
